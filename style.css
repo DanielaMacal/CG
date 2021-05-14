@@ -2,37 +2,31 @@
   box-sizing: border-box;
 }
 
-/* ----Galerie---- */
 .galerie {
+  max-width: 45%;
   position: relative;
-  border-right: solid rgb(72, 180, 216) 3px;
+  margin: left;
 }
 
 .meSlidy {
   display: none;
 }
 
-.cursor {
-  cursor: pointer;
-}
-
 .prev,
 .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 50%;
   width: auto;
+  margin-top: -65px;
   padding: 16px;
-  margin-top: -50px;
-  color: white;
+  transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  -webkit-user-select: none;
 }
 
 .sipky {
-  max-height: 120px;
-  position: relative;
+  max-height: 130px;
 }
 
 .next {
@@ -42,5 +36,30 @@
 
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.185);
+  background-color: rgba(0, 0, 0, 0.24);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
