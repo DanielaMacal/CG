@@ -1,0 +1,2 @@
+# CG
+Pro pohovor
