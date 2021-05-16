@@ -53,14 +53,14 @@ body {
   display: flex;
   flex-direction: column;
   background-color: rgba(230, 223, 212, 0.61);
-  width: 50%;
+  width: 45%;
 }
 
 .card-right2 {
   display: flex;
   flex-direction: column;
   background-color: rgba(230, 223, 212, 0.61);
-  width: 45%;
+  width: 50%;
 }
 
 .whiteSpace {
@@ -70,7 +70,7 @@ body {
 }
 
 .detail {
-  background-color: rgb(88, 79, 65);
+  background-color: rgb(131, 123, 110);
   color: white;
   text-decoration: none;
   position: absolute;
@@ -82,7 +82,7 @@ body {
 }
 
 .detail2 {
-  background-color: rgb(88, 79, 65);
+  background-color: rgb(131, 123, 110);
   color: white;
   text-decoration: none;
   position: absolute;
@@ -93,6 +93,11 @@ body {
   font-weight: 0;
 }
 
+.detail:hover,
+.detail2:hover {
+  background-color: rgb(88, 79, 65);
+}
+
 .description {
   margin-right: 80px;
   margin-bottom: 30px;
@@ -101,8 +106,8 @@ body {
 h1,     /*Myslím si, že font je ve skutečnosti jiný :-) */
 span {
   font-weight: 400;
-  font-size: 4rem;
-  letter-spacing: -2px;
+  font-size: 3.9rem;
+  letter-spacing: -5px;
   line-height: 100%;
   display: block;
   color: black;
@@ -165,7 +170,7 @@ p {
   display: none;
 }
 
-img.mySlides {
+img {
   object-fit: cover;
 }
 
