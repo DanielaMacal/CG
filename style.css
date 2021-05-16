@@ -1,14 +1,124 @@
-* {
+html {
   box-sizing: border-box;
 }
-
-.galerie {
-  max-width: 45%;
-  position: relative;
-  margin: left;
+*,
+::after,
+::before {
+  box-sizing: inherit;
 }
 
-.meSlidy {
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  width: 100%;
+}
+
+.card {
+  max-width: 1400px;
+  height: 550px;
+  margin: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  background-color: white;
+}
+
+.card-left {
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+}
+
+.card-right {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(230, 223, 212, 0.61);
+  width: 50%;
+}
+
+.whiteSpace {
+  display: flex;
+  width: 5%;
+  background-color: white;
+}
+
+.detail {
+  background-color: rgb(88, 79, 65);
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  padding: 30px;
+  top: 100px;
+  right: 0;
+  font-size: 0.85rem;
+  font-weight: 100;
+}
+
+.description {
+  max-width: 95%;
+  margin-bottom: 30px;
+}
+
+h1,     /*To písmo tady máte jakési užší... */
+span {
+  font-weight: 400;
+  font-size: 4rem;
+  letter-spacing: -2px;
+  line-height: 100%;
+  display: block;
+  color: black;
+}
+
+h1 {
+  margin-left: 30px;
+  padding: 130px 0 0 0;
+}
+
+h2 {
+  font-size: 1rem;
+  color: rgba(116, 112, 107, 0.986);
+  font-weight: 100;
+  padding: 10px 0;
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+p {
+  color: rgba(116, 112, 107, 0.986);
+  margin: 30px;
+}
+
+/*---overflow---*/
+
+#overflow {
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(131, 123, 110);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(88, 79, 65);
+}
+
+/*---galerie---*/
+
+.galerie {
+  margin: 0;
+  max-height: 550px;
+  width: 100%;
+  position: relative;
+}
+
+.mySlides {
   display: none;
 }
 
@@ -18,20 +128,24 @@
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -65px;
+  margin-top: -60px;
   padding: 16px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
-.sipky {
-  max-height: 130px;
+img.arrows {
+  max-height: 80px;
+}
+
+img.next,
+img.prev {
+  height: 130px;
 }
 
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
 .prev:hover,
