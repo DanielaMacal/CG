@@ -43,11 +43,24 @@ body {
   width: 45%;
 }
 
+.card-left2 {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
 .card-right {
   display: flex;
   flex-direction: column;
   background-color: rgba(230, 223, 212, 0.61);
   width: 50%;
+}
+
+.card-right2 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(230, 223, 212, 0.61);
+  width: 45%;
 }
 
 .whiteSpace {
@@ -152,6 +165,10 @@ p {
   display: none;
 }
 
+img.mySlides {
+  object-fit: cover;
+}
+
 .prev,
 .next {
   cursor: pointer;
@@ -205,5 +222,41 @@ img.prev {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .card1,
+  .card2 {
+    width: 750px;
+    flex-direction: column;
+    height: 1000px;
+  }
+  .card-left,
+  .card-left2 {
+    flex-direction: column;
+    width: 100%;
+    height: 550px;
+  }
+  .card-right,
+  .card-right2 {
+    flex-direction: column;
+    width: 100%;
+    height: 450px;
+    margin: 0;
+    padding: 10px;
+  }
+  h1 {
+    padding: 10px;
+  }
+  .detail {
+    top: 660px;
+    padding: 15px;
+  }
+  .detail2 {
+    top: 660px;
+    padding: 15px;
+    right: 0;
+    margin-left: 566px;
   }
 }
