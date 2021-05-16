@@ -10,10 +10,10 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   color: white;
-  width: 100%;
+  max-width: 100%;
 }
 
-.card {
+.card1 {
   max-width: 1400px;
   height: 550px;
   margin: auto;
@@ -22,6 +22,19 @@ body {
   flex-direction: row;
   background-color: white;
   box-shadow: 0 0 7px rgba(128, 128, 128, 0.651);
+  margin-bottom: 100px;
+}
+
+.card2 {
+  max-width: 1400px;
+  height: 550px;
+  margin: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row-reverse;
+  background-color: white;
+  box-shadow: 0 0 7px rgba(128, 128, 128, 0.651);
+  margin-bottom: 100px;
 }
 
 .card-left {
@@ -49,14 +62,26 @@ body {
   text-decoration: none;
   position: absolute;
   padding: 30px;
-  top: 100px;
+  top: 60px;
   right: 0;
   font-size: 0.85rem;
   font-weight: 0;
 }
 
+.detail2 {
+  background-color: rgb(88, 79, 65);
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  padding: 30px;
+  left: 0;
+  top: 60px;
+  font-size: 0.85rem;
+  font-weight: 0;
+}
+
 .description {
-  max-width: 95%;
+  margin-right: 80px;
   margin-bottom: 30px;
 }
 
@@ -72,6 +97,7 @@ span {
 
 h1 {
   margin-left: 80px;
+  margin-right: 80px;
   padding: 130px 0 0 0;
 }
 
@@ -82,6 +108,7 @@ h2 {
   padding: 5px 0;
   text-transform: uppercase;
   margin-left: 80px;
+  margin-right: 80px;
 }
 p {
   color: rgba(116, 112, 107, 0.575);
