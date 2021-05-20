@@ -5,6 +5,8 @@ html {
 ::after,
 ::before {
   box-sizing: inherit;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(131, 123, 110) #f1f1f1;
 }
 
 body {
@@ -144,7 +146,7 @@ p {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
