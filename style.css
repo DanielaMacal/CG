@@ -40,14 +40,14 @@ body {
 .card-left {
   display: flex;
   flex-direction: row;
-  width: 65%;
+  width: 60%;
   height: 550px;
 }
 
 .card-left2 {
   display: flex;
   flex-direction: row;
-  width: 65%;
+  width: 60%;
   height: 550px;
 }
 
@@ -55,14 +55,14 @@ body {
   display: flex;
   flex-direction: column;
   background-color: rgba(230, 223, 212, 0.61);
-  width: 30%;
+  width: 35%;
 }
 
 .card-right2 {
   display: flex;
   flex-direction: column;
   background-color: rgba(230, 223, 212, 0.61);
-  width: 30%;
+  width: 35%;
 }
 
 .whiteSpace {
@@ -76,8 +76,8 @@ body {
   color: white;
   text-decoration: none;
   position: absolute;
-  padding: 30px;
-  top: 60px;
+  padding: 20px;
+  top: 20px;
   right: 0;
   font-size: 0.85rem;
   font-weight: 0;
@@ -88,9 +88,9 @@ body {
   color: white;
   text-decoration: none;
   position: absolute;
-  padding: 30px;
-  left: 0;
-  top: 60px;
+  padding: 20px;
+  /* left: 0; */
+  top: 20px;
   font-size: 0.85rem;
   font-weight: 0;
 }
@@ -101,14 +101,14 @@ body {
 }
 
 .description {
-  margin-right: 80px;
+  margin-right: 40px;
   margin-bottom: 30px;
 }
 
 h1,     /*Myslím si, že font je ve skutečnosti jiný :-) */
 span {
   font-weight: 400;
-  font-size: 3.9rem;
+  font-size: 3.4rem;
   letter-spacing: -5px;
   line-height: 100%;
   display: block;
@@ -116,9 +116,9 @@ span {
 }
 
 h1 {
-  margin-left: 80px;
-  margin-right: 80px;
-  padding: 130px 0 0 0;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 50px 0 0 0;
 }
 
 h2 {
@@ -127,13 +127,13 @@ h2 {
   font-weight: 550;
   padding: 5px 0;
   text-transform: uppercase;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 p {
   color: rgba(116, 112, 107, 0.575);
   margin: 30px;
-  margin-left: 80px;
+  margin-left: 40px;
   font-size: 0.75rem;
 }
 
@@ -233,6 +233,105 @@ img.prev {
   }
 }
 
+@media (min-width: 1200px) {
+  .detail2 {
+    left: 0;
+  }
+}
+
+/*---992-1199---*/
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .card1,
+  .card2 {
+    max-width: 1170px;
+    height: auto;
+  }
+  .card-left,
+  .card-left2 {
+    width: 60%;
+    height: 400px;
+  }
+
+  img {
+    height: 400px;
+  }
+
+  .card-right,
+  .card-right2 {
+    width: 35%;
+    max-height: 400px;
+    margin: 0;
+    padding: 10px;
+  }
+  h1 {
+    padding: 0;
+  }
+
+  .detail {
+    top: 83px;
+    padding: 15px;
+    font-size: 0.6rem;
+  }
+  .detail2 {
+    top: 83px;
+    padding: 15px;
+    left: 0;
+    font-size: 0.6rem;
+  }
+  .prev,
+  .next {
+    top: 50%;
+    margin-top: -130px;
+  }
+}
+
+/*---766-991---*/
+
+@media (max-width: 991px) and (min-width: 766px) {
+  .card1,
+  .card2 {
+    max-width: 950px;
+    flex-direction: column;
+    height: auto;
+  }
+  .card-left,
+  .card-left2 {
+    flex-direction: column;
+    width: 100%;
+    height: 520px;
+  }
+
+  img {
+    height: 520px;
+  }
+
+  .card-right,
+  .card-right2 {
+    flex-direction: column;
+    width: 100%;
+    max-height: 450px;
+    margin: 0;
+    padding: 10px;
+  }
+  h1 {
+    padding: 0;
+  }
+  .detail {
+    top: 593px;
+    padding: 15px;
+    font-size: 0.85rem;
+  }
+  .detail2 {
+    top: 593px;
+    padding: 15px;
+    right: 0px;
+    font-size: 0.85rem;
+  }
+}
+
+/*---575-765---*/
+
 @media (max-width: 765px) and (min-width: 575px) {
   .card1,
   .card2 {
@@ -244,13 +343,11 @@ img.prev {
   .card-left2 {
     flex-direction: column;
     width: 100%;
-    height: 400px;
+    height: 380px;
   }
-  /* .galerie {
-    max-height: auto;
-  } */
+
   img {
-    height: 400px;
+    height: 380px;
   }
 
   .card-right,
@@ -262,23 +359,24 @@ img.prev {
     padding: 10px;
   }
   h1 {
-    padding: 10px;
+    padding: 0;
   }
   .detail {
-    top: 535px;
+    top: 460px;
     padding: 15px;
     font-size: 0.7rem;
   }
   .detail2 {
-    top: 535px;
+    top: 460px;
     padding: 15px;
-    right: 0;
-    margin-left: 550px;
+    right: 0px;
     font-size: 0.7rem;
   }
 }
 
-@media (max-width: 575px) and (min-width: 480px) {
+/*---480-574---*/
+
+@media (max-width: 574px) and (min-width: 480px) {
   .card1,
   .card2 {
     max-width: 530px;
@@ -289,36 +387,85 @@ img.prev {
   .card-left2 {
     flex-direction: column;
     width: 100%;
-    height: 300px;
+    height: 250px;
   }
-  /* .galerie {
-    max-height: auto;
-  } */
+
   img {
-    height: 300px;
+    height: 250px;
   }
 
   .card-right,
   .card-right2 {
     flex-direction: column;
     width: 100%;
-    max-height: 450px;
+    max-height: 400px;
     margin: 0;
     padding: 10px;
   }
   h1 {
-    padding: 10px;
+    padding: 0;
   }
+
+  h1,
+  span {
+    font-size: 3.4rem;
+  }
+
   .detail {
-    top: 435px;
-    padding: 15px;
+    top: 333px;
+    padding: 10px;
     font-size: 0.6rem;
   }
   .detail2 {
-    top: 430px;
-    padding: 15px;
+    top: 333px;
+    padding: 10px;
     right: 0;
-    margin-left: 500px;
     font-size: 0.6rem;
+  }
+}
+
+/*---479---*/
+
+@media (max-width: 479px) {
+  .card1,
+  .card2 {
+    max-width: 530px;
+    flex-direction: column;
+    height: auto;
+  }
+  .card-left,
+  .card-left2 {
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+  }
+  img {
+    height: 250px;
+  }
+
+  .card-right,
+  .card-right2 {
+    flex-direction: column;
+    width: 100%;
+    max-height: 400px;
+    margin: 0;
+    padding: 10px;
+  }
+  h1 {
+    padding: 0px;
+  }
+  .detail {
+    display: none;
+  }
+  .detail2 {
+    display: none;
+  }
+  h1,
+  span {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 0.8rem;
   }
 }
